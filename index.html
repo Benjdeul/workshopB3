@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="img/fav_icon.png" type="image/x-icon">
+        <title>Project WorkShop HEP Wolec</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <!-- Bulma Version 0.7.1-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript">
+        $(function(){
+          $("#navbar li").click(function(){
+            for (var i = 1; i <= $("#navbar li").length; i++) {
+               if($("#navbar li:nth-child("+i+")").text() == $(this).text()){
+                  $("#navbar li:nth-child("+i+")").addClass("is-active");
+               }
+               else{
+                  $("#navbar li:nth-child("+i+")").removeClass("is-active");
+               }
+            }
+          });
+        });
+        </script>
+    </head>
+    <body>
+            <nav id="navbar" class="navbar hero is-link is-medium is-bold is-fixed-top">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="../"><img src="http://bulma.io/images/bulma-type-white.png" alt="Logo"></a>
+                        <span class="navbar-burger burger" data-target="navbarMenu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div id="navbarMenu" class="navbar-menu">
+                        <div class="navbar-end">
+                            <div class="tabs is-right">
+                                <ul>
+                                    <li class="is-active"><a>Home</a></li>
+                                    <li><a>Plan</a></li>
+                                    <li><a>Features</a></li>
+                                    <li><a>Team</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        <section class="hero has-background-info is-medium is-bold">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <h1 class="title has-text-white">
+                    The new standard in &lt;insert industry here&gt;
+                    </h1>
+                    <h2 class="subtitle has-text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </h2>
+                </div>
+            </div>
+        </section>
+        <section class="hero has-background-white is-medium is-bold">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <h1 class="title has-text-info">
+                    The new standard in &lt;insert industry here&gt;
+                    </h1>
+                    <h2 class="subtitle has-text-info">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </h2>
+                </div>
+            </div>
+        </section>
+        <section class="hero has-background-info is-medium is-bold">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <h1 class="title has-text-white">
+                    The new standard in &lt;insert industry here&gt;
+                    </h1>
+                    <h2 class="subtitle has-text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </h2>
+                </div>
+            </div>
+        </section>
+        <section class="hero has-background-white is-medium is-bold">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <h1 class="title has-text-info">
+                    The new standard in &lt;insert industry here&gt;
+                    </h1>
+                    <h2 class="subtitle has-text-info">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </h2>
+                </div>
+            </div>
+        </section>
+        <footer class="footer has-background-info">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <h1 class="title has-text-white">
+                    The new standard in &lt;insert industry here&gt;
+                    </h1>
+                    <h2 class="subtitle has-text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </h2>
+                </div>
+            </div>
+            <script src="js/bulma.js"></script>
+        </footer>
+    </body>
+</html>
