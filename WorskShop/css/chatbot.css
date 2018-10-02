@@ -3,11 +3,11 @@
     position:fixed;
     top:0px;
     height:50px;
-    background-color: black;
+    background-color: #3273dc;
     color:white;
     text-align: right;
     font-size: 16px;
-    font-family: Georgia;
+    font-family: Open Sans;
 }
 .topbar{
     display:block;
@@ -20,8 +20,8 @@
     display:block;
     width:80%;
     border-radius: 5px;
-    border:solid 1px black;
-    background-color: lightgreen;
+    border:none;
+    background-color: #209cee;
     float:right;
     margin: 10px;
     padding:5px;
@@ -33,12 +33,15 @@
     border-radius: 5px;
     margin: 10px;
     padding:5px;
-    border:solid 1px black;
-    background-color: lightgray;
+    border:none;
+    background-color: #bbe1fb;
     float:left;
 }
 .inputbox{
     outline:none;
+    border:none;
+    border-radius: 5px;
+    background-color: #efefef;
     width:98%;
     height:40px;
     position:fixed;
