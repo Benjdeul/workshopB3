@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html class="has-navbar-fixed-top">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="img/fav_icon.png" type="image/x-icon">
-        <title>Project WorkShop HEP Wolec</title>
+        <title>Campus HEP Lyon Vaise</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <!-- Bulma Version 0.7.1-->
@@ -29,11 +29,11 @@
         </script>
     </head>
     <body>
-        <section class="hero is-link is-medium is-bold">
-                <nav id="navbar" class="navbar">
+        <!--<section class="hero has-background-link is-medium is-bold is-fixed-top">-->
+                <nav id="navbar" class="navbar hero is-link is-medium is-bold is-fixed-top">
                     <div class="container">
                         <div class="navbar-brand">
-                            <a class="navbar-item" href="../"><img src="http://bulma.io/images/bulma-type-white.png" alt="Logo"></a>
+                            <a class="navbar-item" href="../"><img src="http://www.hep-education.com/wp-content/themes/Object-23/assets/img/logo.png" alt="Logo"></a>
                             <span class="navbar-burger burger" data-target="navbarMenu">
                                 <span></span>
                                 <span></span>
@@ -44,36 +44,18 @@
                             <div class="navbar-end">
                                 <div class="tabs is-right">
                                     <ul>
-                                        <li class="is-active"><a>Home</a></li>
-                                        <li><a>Examples</a></li>
-                                        <li><a>Features</a></li>
-                                        <li><a>Team</a></li>
-                                        <li><a>Help</a></li>
+                                        <li class="is-active"><a href="#home">Accueil</a></li>
+                                        <li><a href="#plan">Plan</a></li>
+                                        <li><a href="#chatbot">Chatbot</a></li>
+                                        <li><a href="#contact">Contact</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </nav>
-                <div class="hero-body">
-                <div class="container has-text-centered">
-                    Yep
-                </div>
-            </div>
-        </section>
-        <section class="hero has-background-white is-medium is-bold">
-            <div class="hero-body">
-                <div class="container has-text-centered">
-                    <h1 class="title has-text-info">
-                    The new standard in &lt;insert industry here&gt;
-                    </h1>
-                    <h2 class="subtitle has-text-info">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </h2>
-                </div>
-            </div>
-        </section>
-        <section class="hero has-background-info is-medium is-bold">
+        <!--</section>-->
+        <section id="home" class="hero has-background-info is-medium is-bold">
             <div class="hero-body">
                 <div class="container has-text-centered">
                     <h1 class="title has-text-white">
@@ -85,7 +67,7 @@
                 </div>
             </div>
         </section>
-        <section class="hero has-background-white is-medium is-bold">
+        <section id="plan" class="hero has-background-white is-medium is-bold">
             <div class="hero-body">
                 <div class="container has-text-centered">
                     <h1 class="title has-text-info">
@@ -97,7 +79,7 @@
                 </div>
             </div>
         </section>
-        <footer class="footer has-background-info">
+        <section id="chatbot" class="hero has-background-info is-medium is-bold">
             <div class="hero-body">
                 <div class="container has-text-centered">
                     <h1 class="title has-text-white">
@@ -108,7 +90,18 @@
                     </h2>
                 </div>
             </div>
-            <script src="js/bulma.js"></script>
-        </footer>
+        </section>
+        <section id="contact" class="hero has-background-white is-medium is-bold">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <h1 class="title has-text-info">
+                    The new standard in &lt;insert industry here&gt;
+                    </h1>
+                    <h2 class="subtitle has-text-info">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </h2>
+                </div>
+            </div>
+        </section>
     </body>
 </html>
