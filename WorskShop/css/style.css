@@ -1,6 +1,10 @@
-html,body {
+html, body {
   background: #EFF3F4;
   font-family: 'Open Sans', serif;
+}
+#home{
+  background-image: url(http://www.cefam.fr/wp-content/uploads/2016/12/CAMPUS-RENE-CASSIN-1.jpg);
+
 }
 .anchor {
     display: block;
