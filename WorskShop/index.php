@@ -29,11 +29,11 @@
           });
           function activateModal(img){
             $('#modalplan').addClass('is-active');
-            $("#imgplan").attr('src', img);
+            $("#imgplan").load(img);
           }
 
           $("#XMLID_1_LECLAIR").click(function(){
-            activateModal('img/planrene/1');
+            activateModal('svg/leclair_detail.svg');
           });
           $("#XMLID_2_LECLAIR").click(function(){
             activateModal('img/planrene/2');
@@ -137,9 +137,7 @@
         <div id="modalplan" class="modal">
           <div class="modal-background"></div>
           <div class="modal-content">
-            <p class="image is-4by3">
-              <img id="imgplan" src="https://bulma.io/images/placeholders/1280x960.png" alt="">
-            </p>
+              <div id="imgplan"></div>
           </div>
           <button class="modal-close is-large" aria-label="close" onclick="$('#modalplan').removeClass('is-active');"></button>
         </div>
