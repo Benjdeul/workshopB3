@@ -114,26 +114,19 @@
                 if(!verifChamps(champs)){
                   return null;
                 }
-                console.log('tamere');
-                /*$.post(
-                    'api',
-                    {
-                        nom : $("#nom").val(),
-                        email : $("#email").val(), 
-                        subject : $("#subject option:selected").attr("value"),
-                        message: $("#message").val()
-                    },
-                    function(data){
-                        console.log(data);
-                    },
-                    'text'
-                );*/
+                $("#notifenvoi").css('visibility', 'visible');
+                $("#notifenvoi").append('Message bien envoyé');
+                setTimeout(function() {
+                  $("#notifenvoi").css('visibility', 'hidden');
+                }, 3000);
             });
 
         });
         </script>
     </head>
     <body>
+        <div id="notifenvoi" style="visibility: hidden; position: fixed; width: 100%; z-index: 30" class=" has-text-centered notification is-primary">      
+        </div>
         <div id="modalplan" class="modal">
           <div class="modal-background"></div>
           <div class="modal-content">
@@ -144,7 +137,7 @@
         <nav id="navbar" class="navbar hero is-link is-fixed-top">
             <div class="container">
                 <div class="navbar-brand">
-                    <a class="navbar-item" href="../"><img src="http://www.hep-education.com/wp-content/themes/Object-23/assets/img/logo.png" alt="Logo"></a>
+                    <a class="navbar-item" href=""><img src="http://www.hep-education.com/wp-content/themes/Object-23/assets/img/logo.png" alt="Logo"></a>
                     <span class="navbar-burger burger" data-target="navbarMenu">
                         <span></span>
                         <span></span>
