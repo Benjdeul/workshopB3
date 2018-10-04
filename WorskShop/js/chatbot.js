@@ -2,6 +2,7 @@ $(function () {
 
     $('form').on('submit', function (e) {
         var query = $("#message").val();
+        query = query.replace(/ /g, "/");
         showUserText();
         e.preventDefault();
         $.ajax({
@@ -17,9 +18,11 @@ $(function () {
                     'class': "rounded-div-bot",
                     tabindex:1
                 });
+                if(obj.result.parameters.school || obj.result.parameters.location){
+                    console.log("ok");
+                }
                 $("#chat-text").append(answerdiv);
                 $(answerdiv).focus();
-
                 $("#message").focus();
             }
         });
