@@ -18,6 +18,5 @@
 	    </span>
 	    <input name="submit" type="hidden" value="Submit">
 	</form>
-	<div class="box"
 </body>
 </html>
