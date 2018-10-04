@@ -10,14 +10,13 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <!-- Bulma Version 0.7.1-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
-        <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
         <link rel="stylesheet" type="text/css" href="css/jquery.svg.css">
-        <script type="text/javascript" src="/node_modules/bulma-extensions/bulma-carousel/dist/bulma-carousel.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/chatbot.js"></script>
         <script type="text/javascript">
         $(function(){
-
           $("#navbar li").click(function(){
             for (var i = 1; i <= $("#navbar li").length; i++) {
                if($("#navbar li:nth-child("+i+")").text() == $(this).text()){
@@ -32,42 +31,104 @@
             $('#modalplan').addClass('is-active');
             $("#imgplan").load(img);
           }
-
+          function showPoint(etage, bat){
+            $.getJSON("school.json", function(json) {
+              var tbPos = [];
+              for(var i=0; i<json.school.length; i++){
+                if(json.school[i].etage == etage && json.school[i].pos.substr(0,1) == bat){
+                  tbPos.push(json.school[i].pos);
+                }
+              }
+              for(var i=0; i<json.lieu.length; i++){
+                if(json.school[i].etage == etage && json.school[i].pos.substr(0,1) == bat){
+                  tbPos.push(json.school[i].pos);
+                }
+              }
+              for(var i=0; i<8; i++){
+                if(!tbPos.includes(bat + i)){
+                  switch (bat + i){
+                  case "B0":
+                    setTimeout(function(){$('#B0').hide();}, 30);
+                    break;
+                  case "B1":
+                    setTimeout(function(){$('#B1').hide();}, 30);
+                    break;
+                  case "B2":
+                    setTimeout(function(){$('#B2').hide();}, 30);
+                    break;
+                  case "B3":
+                    setTimeout(function(){$('#B3').hide();}, 30);
+                    break;
+                  case "B4":
+                    setTimeout(function(){$('#B4').hide();}, 30);
+                    break;
+                  case "B5":
+                    setTimeout(function(){$('#B5').hide();}, 30);
+                    break;
+                  case "L0":
+                    setTimeout(function(){$('#L0').hide();}, 30);
+                    break;
+                  case "L1":
+                    setTimeout(function(){$('#L1').hide();}, 30);
+                    break;
+                  case "L2":
+                    setTimeout(function(){$('#L2').hide();}, 30);
+                    break;
+                  case "L3":
+                    setTimeout(function(){$('#L3').hide();}, 30);
+                    break;
+                  case "L4":
+                    setTimeout(function(){$('#L4').hide();}, 30);
+                    break;
+                  }
+                }
+              }
+            });
+          }
           $("#XMLID_1_LECLAIR").click(function(){
             activateModal('svg/leclair_detail.svg');
+            showPoint(2,"L");
           });
           $("#XMLID_2_LECLAIR").click(function(){
-            activateModal('img/planrene/2');
+            activateModal('svg/leclair_detail.svg');
+            showPoint(3,"L");
           });
           $("#XMLID_3_LECLAIR").click(function(){
-            activateModal('img/planrene/3');
+            activateModal('svg/leclair_detail.svg');
+            showPoint(4,"L");
           });
           $("#XMLID_4_LECLAIR").click(function(){
-            activateModal('img/planrene/4');
+            activateModal('svg/leclair_detail.svg');
+            showPoint(5,"L");
           });
           $("#XMLID_5_LECLAIR").click(function(){
-            activateModal('img/planrene/0');
+            activateModal('svg/leclair_detail.svg');
+            showPoint(0,"L");
           });
-
           $("#XMLID_1_CASSIN").click(function(){
-            activateModal('img/plancassin/0');
+            activateModal('svg/berthet_detail.svg');
+            showPoint(0,"B");
           });
           $("#XMLID_2_CASSIN").click(function(){
-            activateModal('img/plancassin/1');
+            activateModal('svg/berthet_detail.svg');
+            showPoint(1,"B");
           });
           $("#XMLID_3_CASSIN").click(function(){
-            activateModal('img/plancassin/2');
+            activateModal('svg/berthet_detail.svg');
+            showPoint(2,"B");
           });
           $("#XMLID_4_CASSIN").click(function(){
-            activateModal('img/plancassin/3');
+            activateModal('svg/berthet_detail.svg');
+            showPoint(3,"B");
           });
           $("#XMLID_5_CASSIN").click(function(){
-            activateModal('img/plancassin/4');
+            activateModal('svg/berthet_detail.svg');
+            showPoint(4,"B");
           });
           $("#XMLID_6_CASSIN").click(function(){
-            activateModal('img/plancassin/5');
+            activateModal('svg/berthet_detail.svg');
+            showPoint(5,"B");
           });
-
           function verifChamps(champs)
           {
             var exp = /^(([^<>()[]\.,;:s@]+(.[^<>()[]\.,;:s@]+)*)|(.+))@(([[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}])|(([a-zA-Z-0-9]+.)+[a-zA-Z]{2,}))$/;
@@ -108,7 +169,6 @@
             }
             return true;
           }
-
           $("#submitcontact").click(function(e){
                 e.preventDefault();
                 var champs = [$('#nom'), $('#email'), $("#subject"), $("#message")];
@@ -126,12 +186,11 @@
                   $("#notifenvoi").text('');
                 }, 3000);
             });
-
         });
         </script>
     </head>
     <body>
-        <div id="notifenvoi" style="visibility: hidden; position: fixed; z-index: 30;" class=" has-text-centered notification is-primary">      
+        <div id="notifenvoi" style="visibility: hidden; position: fixed; width: 100%; z-index: 30" class=" has-text-centered notification is-primary">      
         </div>
         <div id="modalplan" class="modal">
           <div class="modal-background"></div>
@@ -179,7 +238,6 @@
             </div>
         </section>
         <section id="plan" class="hero has-background-white is-bold">
-          <div id="anchorplan" style="visibility: hidden; top: -50px; position: relative;"></div>
             <div class="hero-body">
                 <div class="container has-text-centered">
                     <h1 class="title has-text-info">
@@ -203,17 +261,16 @@
                 </div>
             </div>
         </section>
-        <section id="chatbot" class="hero is-bold" style="background-color: #003366;">
-            <div id="anchorchatbot" style="visibility: hidden; top: -50px; position: relative;"></div>
+        <section id="chatbot" class="hero has-background-info is-bold">
             <div class="hero-body">
                 <div class="container has-text-centered">
-                    <h1 class="title has-text-white">
+                   <h1 class="title has-text-white">
                     The new standard in &lt;insert industry here&gt;
                     </h1>
                     <h2 class="subtitle has-text-white">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </h2>
-                </div>
+                  </div>
             </div>
         </section>
         <section id="ecole" class="hero has-background-white is-bold">
@@ -232,11 +289,11 @@
             <div class="hero-body">
                 <div class="container">
                   <form id="contactform">
-                    <h1 class="title has-text-white">
+                    <h1 class="title has-text-info">
                     Contactez nous!
                     </h1>
                     <div id="nomblock" class="field">
-                      <label class="label" style="color: white;">Nom</label>
+                      <label class="label">Nom</label>
                       <div class="control has-icons-left has-icons-right">
                         <input id="nom" class="input" type="text" placeholder="Votre nom">
                         <span class="icon is-small is-left">
@@ -246,7 +303,7 @@
                     </div>
           
                     <div id="emailblock" class="field">
-                      <label class="label" style="color: white;">Email</label>
+                      <label class="label">Email</label>
                       <div class="control has-icons-left has-icons-right">
                         <input id="email" class="input" type="email" placeholder="Votre email">
                         <span class="icon is-small is-left">
@@ -256,7 +313,7 @@
                     </div>
                     
                     <div id="subjectblock" class="field">
-                      <label class="label" style="color: white;">Sujet</label>
+                      <label class="label">Sujet</label>
                       <div class="control">
                         <div class="select">
                           <select id="subject">
@@ -272,7 +329,7 @@
                     </div>
                     
                     <div id="messageblock" class="field">
-                      <label class="label" style="color: white;">Message</label>
+                      <label class="label">Message</label>
                       <div class="control">
                         <textarea id="message" class="textarea" placeholder="Votre message"></textarea>
                       </div>
