@@ -1,0 +1,202 @@
+{
+	"school" : [
+		{
+			"name": "Sup de Com",
+			"batiment": "Berthet",
+			"etage": "2",
+			"pos": "B0",
+			"info": "Les formations de SUP’DE COM sont pensées chaque année pour coller au plus près des évolutions du marché et des attentes des entreprises" 
+		},
+		{
+			"name": "CFA",
+			"batiment": "Berthet",
+			"etage": "1",
+			"pos": "B0",
+			"info": "Le CFA Lyon est un centre de formation en apprentissage qui propose des Bacs Professionnels, des BTS, des Titres inscrits au RNCP dans les domaines du commerce, de la communication, l’informatique, la comptabilité et gestion des organisations." 
+		},
+		{
+			"name": "CIEFA",
+			"batiment": "Berthet",
+			"etage": "1",
+			"pos": "B0",
+			"info": "Le CIEFA Lyon est un centre de formation en alternance qui offre des formations en gestion d’entreprise : commerce, communication, management, comptabilité et RH." 
+		},
+		{
+			"name": "EPSI",
+			"batiment": "Leclair",
+			"etage": "2",
+			"pos": "L0",
+			"info": "L’EPSI est une école informatique multi campus, présente Lyon. L’EPSI se positionne sur le segment des Ecoles d’ingénierie informatique post bac et sans prépa. Exigence, accompagnement dans l’effort, humanité et convivialité sont les forces de l’école informatique EPSI." 
+		},
+		{
+			"name": "WIS",
+			"batiment": "Leclair",
+			"etage": "2",
+			"pos": "L0",
+			"info": "WIS (Web International School) est une école qui propose une formation web et digital business accessible après le Bac ou en admission parallèle. WIS délivre 2 formations : le programme Bachelor ' web et digital business ' (Bac+3) et le programme Expertise Digital Business (Bac+5)." 
+		},
+		{
+			"name": "ISCPA",
+			"batiment": "Berthet",
+			"etage": "3",
+			"pos": "B0",
+			"info": "L’ISCPA, Institut supérieur des Médias, est spécialisée dans les formations aux métiers du Journalisme, de la Communication et de la Production, de BAC à BAC+5, à Paris, Lyon et Toulouse." 
+		},
+		{
+			"name": "IDRAC Business School",
+			"batiment": "Berthet",
+			"etage": "2",
+			"pos": "B0",
+			"info": "IDRAC Business school est une Ecole de commerce post bac et sans prépa. Exigence, accompagnement dans l’effort, humanité et convivialité sont les forces de l’école. Découvrez nos programmes Bachelor, BTS, Grande Ecole et Bac+4/5qui sont aussi accessibles par la VAE." 
+		},
+		{
+			"name": "IDRAC Executive Education",
+			"batiment": "Lelcair",
+			"etage": "4",
+			"pos": "L0",
+			"info": "La formation continue du groupe Idrac Business School répond aux besoins en formation des actifs : salariés, demandeurs d’emploi… Sur les thématiques du management, marketing, vente, e-commerce, achats, relation client, communication, gestion, finance…" 
+		},
+		{
+			"name": "CEFAM",
+			"batiment": "Berthet",
+			"etage": "3",
+			"pos": "B0",
+			"info": "Créé en 1986, le CEFAM forme de futurs décideurs et managers qui mettent leurs compétences au service des entreprises internationales. Très professionnalisant, notre système académique, basé sur celui des Business Schools américaines, accompagne et guide nos étudiants dans leurs choix d’avenir." 
+		},
+		{
+			"name": "IEFT",
+			"batiment": "Berthet",
+			"etage": "2",
+			"pos": "B0",
+			"info": "L’école de tourisme propose des formations diplômantes BTS tourisme, Bac+3, Bac+4 et Bac+5 management du tourisme en formation initiale et en alternance." 
+		},
+		{
+			"name": "IMSI",
+			"batiment": "Berthet",
+			"etage": "1",
+			"pos": "B0",
+			"info": "L’IMSI propose une offre de formation complète, du BTS au Cycle Mastère Professionnel, en passant par le Bachelor. L’école prépare ses étudiants afin qu’ils soient immédiatement opérationnels dans des fonctions à responsabilité dans les métiers de la gestion immobilière, la transaction, la promotion, la construction, la rénovation et l’expertise immobilière." 
+		},
+		{
+			"name": "3A",
+			"batiment": "Berthet",
+			"etage": "3",
+			"pos": "B0",
+			"info": "Avant l’expertise, avant les techniques, nous défendons des valeurs fortes : éthique, justice, égalité, ouverture au monde et respect du patrimoine Terre. Ces valeurs ne sont ni des accessoires, ni des faux semblants. Avec les sciences de gestion, elles sont au centre de nos enseignements : la géopolitique, les langues, le développement durable, l’économie sociale et solidaire, l’anthropologie, la responsabilité sociale sont chez nous dominantes." 
+		},
+		{
+			"name": "IGS RH",
+			"batiment": "Berthet",
+			"etage": "5",
+			"pos": "B0",
+			"info": "IGS RH l’école des Ressources Humaines forme depuis 40 ans des responsables de la fonction RH en entreprise. Aujourd’hui, la force de l’Institut de Gestion Sociale est de vous apporter une formation RH sous forme de programme académique de 1 à 5 années de spécialisations, reconnues par la profession." 
+		},
+		{
+			"name": "IPI",
+			"batiment": "Lelcair",
+			"etage": "2",
+			"pos": "L0",
+			"info": "Créé en 1995, l’IET forme aux métiers de l’environnement, de l’aménagement du territoire et du management en développement durable. Pionnier en la matière il associe, connaissances du monde l’entreprise et formations professionnalisantes pour des jeunes qui souhaitent s’engager dans des carrières dans l’économie verte. Les formations dispensées permettent d’articuler compétences techniques et affirmation de soi, développement." 
+		},
+		{
+			"name": "ESAM",
+			"batiment": "Berthet",
+			"etage": "2",
+			"pos": "B2",
+			"info": "L’ESAM, l’école de management du Groupe IGS à Lyon est spécialisée dans la préparation aux métiers de la Finance d’Entreprise et du Management Stratégique." 
+		},
+		{
+			"name": "IGEFI",
+			"batiment": "Lelcair",
+			"etage": "3",
+			"pos": "L0",
+			"info": "L’IGEFI est un établissement d’enseignement supérieur fondé en 1993, qui forme des professionnels de haut niveau aux métiers de l’expertise comptable, de la gestion, de la finance et de la paie." 
+		},
+		{
+			"name": "ESAIL",
+			"batiment": "Lelcair",
+			"etage": "3",
+			"pos": "L0",
+			"info": "Installée d’abord à l’ancien Fort de Vaise, l’École n’a cessé de se développer pour devenir une des principales écoles d’Architecture Intérieure sur le plan national." 
+		},
+		{
+			"name": "Open Source School",
+			"batiment": "Lelcair",
+			"etage": "3",
+			"pos": "L0",
+			"info": "OSS – Open Source School est la première école informatique spécialisée dans l’enseignement open source. Elle forme des professionnels capables d’assurer la conception, la réalisation et la direction de grands projets open source dans un environnement international exigeant." 
+		},
+		{
+			"name": "IFAG",
+			"batiment": "Berthet",
+			"etage": "4",
+			"pos": "B2",
+			"info": "L'IFAG est une école de management et d'entrepreneuriat installée dans 16 campus (15 villes de métropole et 1 ville d’Outre-Mer). Elle forme les créateurs et repreneurs d'entreprises ainsi que tous ceux qui souhaitent occuper une fonction de direction. L'Ecole de management propose un cursus en 5 ans post-bac. Découvrez l'offre de formation de l'Ecole de management IFAG." 
+		},
+		{
+			"name": "CBIO",
+			"batiment": "Lelcair",
+			"etage": "0",
+			"pos": "L4",
+			"info": "Le CBIO accompagne et oriente, il intervient dans de nombreux secteurs : il accueille tout public : ouvrier, employés, techniciens, cadres, indépendants…" 
+		},
+		{
+			"name": "ICL",
+			"batiment": "Berthet",
+			"etage": "3",
+			"pos": "B2",
+			"info": "L’ICL est un établissement d’enseignement supérieur qui forme en 1, 2 ou 3 ans des professionnels des métiers du commerce, de la négociation et de la vente de haut niveau. L’école est habilitée à préparer à Bac+3 un Bachelor (titre certifié de niveau 2), elle délivre à Bac+5 un titre certifié de niveau 1." 
+		},
+		{
+			"name": "Groupe IGS",
+			"batiment": "Lelcair",
+			"etage": "4",
+			"pos": "L0",
+			"info": "Groupe IGS propose plusieurs cursus ainsi que des VAE et des formations pour les entreprises. Leur domaine sont centralisés sur le management et le développement des ressources humaines, le management gestion et finance entreprenariat mais également le commerce marketing développement services et pour finir dans l’informatique." 
+		}
+	],
+	"lieu": [
+		{
+			"name": "Infothèque",
+			"batiment": "Berthet",
+			"etage": "0",
+			"pos": "B5",
+			"info": "Véritable espace de travail de 420m², l’infothèque du campus HEP Lyon met à votre disposition plusieurs centaines d’ouvrages, la presse française et internationale mais l’infothèque sert également de base de données socio-économiques mondiales."
+		},
+		{
+			"name": "MyDil",
+			"batiment": "Lelcair",
+			"etage": "2",
+			"pos": "L1",
+			"info": "Un espace de travail dans lequel il y a plusieurs matériels d’informatique à votre disposition."
+		},
+		{
+			"name": "Learning lab",
+			"batiment": "Berthet",
+			"etage": "1",
+			"pos": "L4",
+			"info": "Le learning lab vous permet d’expérimenter de nouvelles pédagogies et de tester de nouveaux matériels et de nouvelles technologies. Le campus HEP Lyon, vous pousse à la découverte de la technologie."
+		},
+		{
+			"name": "Incubateur",
+			"batiment": "Lelcair",
+			"etage": "0",
+			"pos": "L2",
+			"info": "Véritable espace privilégié d’ouverture et de rencontre avec les entreprises pour un lien emploi-formation, le campus a été conçu comme lieu d’apprentissage, de vie et d’épanouissement personnel."
+		},
+		{
+			"name": "Centre d’orientation",
+			"batiment": "Lelcair",
+			"etage": "0",
+			"pos": "L4",
+			"info": "Le campus HEP Lyon vous propose les services de l’expertise du CBIO qui a pour but d’accompagner les lycéens, les étudiants, futurs bénéficiaires dans leur choix d’orientation, voire de réorientation."
+		},
+		{
+			"name": "Ascenseur",
+			"batiment": "Berthet",
+			"etage": "0",
+			"pos": "B3",
+			"info": "En ce qui concerne les ascenseur nos deux bâtiments sont correctement équipés. Dans le bâtiment Berthet il y a six ascenseurs mis à disposition des étudiants. Et dans le deuxième bâtiment du campus, il y deux ascenseurs en libre accès par les étudiants."
+		}
+	]
+}
