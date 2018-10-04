@@ -1,164 +1,26 @@
-<div class='carousel carousel-animated carousel-animate-slide' data-size="8">
-  <div class='carousel-container'>
-    <div class="carousel-item is-active">
-      <div id="epsi" class="card">
-        <div class="card-content">
-          <div class="media">
-            <div class="media-left">
-              <figure class="image is-48x48">
-                <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-              </figure>
-            </div>
-            <div class="media-content">
-              <p class="title is-4">Epsi</p>
-            </div>
+<?php $json = json_decode(file_get_contents('school.json'), true);
+      $school = $json['school'];
+?>
+<div class='columns is-multiline is-mobile'>
+  <?php for ($i=0; $i < 8; $i++) { ?>
+  <div class="column is-one-quarter">
+    <div class="card">
+      <div class="card-content">
+        <div class="media">
+          <div class="media-left">
+            <figure class="image is-48x48">
+              <a href="<?= $school[$i]['site']?>"><img src="<?= $school[$i]['logo']?>" alt="Placeholder image"></a>
+            </figure>
           </div>
-          <div class="content">
-              <p>Ecole d'informatique</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div id="epsi" class="card">
-        <div class="card-content">
-          <div class="media">
-            <div class="media-left">
-              <figure class="image is-48x48">
-                <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-              </figure>
-            </div>
-            <div class="media-content">
-              <p class="title is-4">Epsi</p>
-            </div>
-          </div>
-          <div class="content">
-              <p>Ecole d'informatique</p>
+          <div class="media-content">
+            <p class="title is-4"><?= $school[$i]['name'] ?></p>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div id="epsi" class="card">
-        <div class="card-content">
-          <div class="media">
-            <div class="media-left">
-              <figure class="image is-48x48">
-                <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-              </figure>
-            </div>
-            <div class="media-content">
-              <p class="title is-4">Epsi</p>
-            </div>
-          </div>
-          <div class="content">
-              <p>Ecole d'informatique</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div id="epsi" class="card">
-        <div class="card-content">
-          <div class="media">
-            <div class="media-left">
-              <figure class="image is-48x48">
-                <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-              </figure>
-            </div>
-            <div class="media-content">
-              <p class="title is-4">Epsi</p>
-            </div>
-          </div>
-          <div class="content">
-              <p>Ecole d'informatique</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div id="epsi" class="card">
-        <div class="card-content">
-          <div class="media">
-            <div class="media-left">
-              <figure class="image is-48x48">
-                <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-              </figure>
-            </div>
-            <div class="media-content">
-              <p class="title is-4">Epsi</p>
-            </div>
-          </div>
-          <div class="content">
-              <p>Ecole d'informatique</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div id="epsi" class="card">
-        <div class="card-content">
-          <div class="media">
-            <div class="media-left">
-              <figure class="image is-48x48">
-                <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-              </figure>
-            </div>
-            <div class="media-content">
-              <p class="title is-4">Epsi</p>
-            </div>
-          </div>
-          <div class="content">
-              <p>Ecole d'informatique</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div id="epsi" class="card">
-        <div class="card-content">
-          <div class="media">
-            <div class="media-left">
-              <figure class="image is-48x48">
-                <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-              </figure>
-            </div>
-            <div class="media-content">
-              <p class="title is-4">Epsi</p>
-            </div>
-          </div>
-          <div class="content">
-              <p>Ecole d'informatique</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div id="epsi" class="card">
-        <div class="card-content">
-          <div class="media">
-            <div class="media-left">
-              <figure class="image is-48x48">
-                <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-              </figure>
-            </div>
-            <div class="media-content">
-              <p class="title is-4">Epsi</p>
-            </div>
-          </div>
-          <div class="content">
-              <p>Ecole d'informatique</p>
-          </div>
+        <div class="content">
+            <p><?= 'Batiment: '.$school[$i]['batiment'].', etage: '.$school[$i]['etage'] ?></p>
         </div>
       </div>
     </div>
   </div>
-  <div class="carousel-navigation is-centered">
-      <div class="carousel-nav-left">
-        <i class="fa fa-chevron-left" aria-hidden="true"></i>
-      </div>
-      <div class="carousel-nav-right">
-        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-      </div>
-  </div>
+<?php } ?>
 </div>

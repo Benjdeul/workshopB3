@@ -238,9 +238,10 @@
             </div>
         </section>
         <section id="plan" class="hero has-background-white is-bold">
+        	<div id="anchorplan" style="visibility: hidden; top: -50px; position: relative;"></div>
             <div class="hero-body">
                 <div class="container has-text-centered">
-                    <h1 class="title has-text-info">
+                    <h1 class="title" style="color: #003366;">
                     Plans intéractif bâtiment René Cassin
                     </h1>
                     <h2 class="subtitle has-text-info">
@@ -251,7 +252,7 @@
                 <br>
                 <br>
                 <div class="container has-text-centered">
-                    <h1 class="title has-text-info">
+                    <h1 class="title" style="color: #003366;">
                     Plans intéractif bâtiment Leclair
                     </h1>
                     <h2 class="subtitle has-text-info">
@@ -261,7 +262,8 @@
                 </div>
             </div>
         </section>
-        <section id="chatbot" class="hero has-background-info is-bold">
+        <section id="chatbot" class="hero is-bold" style="background-color: #003366;">
+        	<div id="anchorchatbot" style="visibility: hidden; top: -50px; position: relative;"></div>
             <div class="hero-body">
                 <div class="container has-text-centered">
                    <h1 class="title has-text-white">
@@ -274,11 +276,11 @@
             </div>
         </section>
         <section id="ecole" class="hero has-background-white is-bold">
-            <div id="anchorecole" style="visibility: hidden; top: -50px; position: relative;"></div>
+            <div id="anchorecoles" style="visibility: hidden; top: -50px; position: relative;"></div>
             <div class="hero-body">
                 <div class="container has-text-centered">
-                    <h1 class="title has-text-info">
-                    Les écoles du campus HEP-Education Lyon
+                    <h1 class="title" style="color: #003366;">
+                    Quelques écoles du campus HEP-Education Lyon
                     </h1>
                 </div>
                 <br>
@@ -289,11 +291,11 @@
             <div class="hero-body">
                 <div class="container">
                   <form id="contactform">
-                    <h1 class="title has-text-info">
+                    <h1 class="title has-text-white">
                     Contactez nous!
                     </h1>
                     <div id="nomblock" class="field">
-                      <label class="label">Nom</label>
+                      <label class="label" style="color: white;">Nom</label>
                       <div class="control has-icons-left has-icons-right">
                         <input id="nom" class="input" type="text" placeholder="Votre nom">
                         <span class="icon is-small is-left">
@@ -303,7 +305,7 @@
                     </div>
           
                     <div id="emailblock" class="field">
-                      <label class="label">Email</label>
+                      <label class="label" style="color: white;">Email</label>
                       <div class="control has-icons-left has-icons-right">
                         <input id="email" class="input" type="email" placeholder="Votre email">
                         <span class="icon is-small is-left">
@@ -313,7 +315,7 @@
                     </div>
                     
                     <div id="subjectblock" class="field">
-                      <label class="label">Sujet</label>
+                      <label class="label" style="color: white;">Sujet</label>
                       <div class="control">
                         <div class="select">
                           <select id="subject">
@@ -329,14 +331,14 @@
                     </div>
                     
                     <div id="messageblock" class="field">
-                      <label class="label">Message</label>
+                      <label class="label" style="color: white;">Message</label>
                       <div class="control">
                         <textarea id="message" class="textarea" placeholder="Votre message"></textarea>
                       </div>
                     </div>
                     <div class="field is-grouped">
                       <div class="control">
-                        <button class="button is-link" id="submitcontact">Submit</button>
+                        <button class="button is-danger" style="background-color: #ff2722;" id="submitcontact">Submit</button>
                       </div>
                     </div>
                 </div>
