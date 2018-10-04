@@ -12,7 +12,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
-        <link rel="stylesheet" type="text/css" href="css/jquery.svg.css"> 
+        <link rel="stylesheet" type="text/css" href="css/jquery.svg.css">
+        <script type="text/javascript" src="/node_modules/bulma-extensions/bulma-carousel/dist/bulma-carousel.min.js"></script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript">
         $(function(){
@@ -116,8 +117,13 @@
                 }
                 $("#notifenvoi").css('visibility', 'visible');
                 $("#notifenvoi").append('Message bien envoyé');
+                $('#nom').val('');
+                $('#email').val('');
+                $('#subject').val('');
+                $('#message').val('');
                 setTimeout(function() {
                   $("#notifenvoi").css('visibility', 'hidden');
+                  $("#notifenvoi").text('');
                 }, 3000);
             });
 
@@ -125,7 +131,7 @@
         </script>
     </head>
     <body>
-        <div id="notifenvoi" style="visibility: hidden; position: fixed; width: 100%; z-index: 30" class=" has-text-centered notification is-primary">      
+        <div id="notifenvoi" style="visibility: hidden; position: fixed; z-index: 30;" class=" has-text-centered notification is-primary">      
         </div>
         <div id="modalplan" class="modal">
           <div class="modal-background"></div>
@@ -137,7 +143,7 @@
         <nav id="navbar" class="navbar hero is-link is-fixed-top">
             <div class="container">
                 <div class="navbar-brand">
-                    <a class="navbar-item" href=""><img src="http://www.hep-education.com/wp-content/themes/Object-23/assets/img/logo.png" alt="Logo"></a>
+                    <a class="navbar-item image" href="" style="width: 100px; padding: 0;"><img src="img/logo-help.png" alt="Logo" style="max-height: 100%;"></a>
                     <span class="navbar-burger burger" data-target="navbarMenu">
                         <span></span>
                         <span></span>
@@ -148,9 +154,10 @@
                     <div class="navbar-end">
                         <div class="tabs is-right">
                             <ul>
-                                <li class="is-active"><a href="#home">Accueil</a></li>
-                                <li><a href="#plan">Plan</a></li>
-                                <li><a href="#chatbot">Chatbot</a></li>
+                                <li class="is-active"><a href="#anchorhome">Accueil</a></li>
+                                <li><a href="#anchorplan">Plan</a></li>
+                                <li><a href="#anchorchatbot">Chatbot</a></li>
+                                <li><a href="#anchorecoles">Les écoles</a></li>
                                 <li><a href="#contact">Contact</a></li>
                             </ul>
                         </div>
@@ -159,6 +166,7 @@
             </div>
         </nav>
         <section id="home" class="hero has-bg-img is-medium is-bold">
+          <div id="anchorhome" style="visibility: hidden; top: -50px; position: relative;"></div>
             <div class="hero-body">
                 <div class="container has-text-centered">
                     <h1 class="title has-text-white">
@@ -171,6 +179,7 @@
             </div>
         </section>
         <section id="plan" class="hero has-background-white is-bold">
+          <div id="anchorplan" style="visibility: hidden; top: -50px; position: relative;"></div>
             <div class="hero-body">
                 <div class="container has-text-centered">
                     <h1 class="title has-text-info">
@@ -194,7 +203,8 @@
                 </div>
             </div>
         </section>
-        <section id="chatbot" class="hero has-background-info is-bold">
+        <section id="chatbot" class="hero is-bold" style="background-color: #003366;">
+            <div id="anchorchatbot" style="visibility: hidden; top: -50px; position: relative;"></div>
             <div class="hero-body">
                 <div class="container has-text-centered">
                     <h1 class="title has-text-white">
@@ -206,15 +216,27 @@
                 </div>
             </div>
         </section>
-        <section id="contact" class="hero has-background-white is-bold">
+        <section id="ecole" class="hero has-background-white is-bold">
+            <div id="anchorecole" style="visibility: hidden; top: -50px; position: relative;"></div>
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <h1 class="title has-text-info">
+                    Les écoles du campus HEP-Education Lyon
+                    </h1>
+                </div>
+                <br>
+                <?php include('schools.php') ?>
+            </div>
+        </section>
+        <section id="contact" class="hero is-bold" style="background-color: #003366;">
             <div class="hero-body">
                 <div class="container">
                   <form id="contactform">
-                    <h1 class="title has-text-info">
+                    <h1 class="title has-text-white">
                     Contactez nous!
                     </h1>
                     <div id="nomblock" class="field">
-                      <label class="label">Nom</label>
+                      <label class="label" style="color: white;">Nom</label>
                       <div class="control has-icons-left has-icons-right">
                         <input id="nom" class="input" type="text" placeholder="Votre nom">
                         <span class="icon is-small is-left">
@@ -224,7 +246,7 @@
                     </div>
           
                     <div id="emailblock" class="field">
-                      <label class="label">Email</label>
+                      <label class="label" style="color: white;">Email</label>
                       <div class="control has-icons-left has-icons-right">
                         <input id="email" class="input" type="email" placeholder="Votre email">
                         <span class="icon is-small is-left">
@@ -234,7 +256,7 @@
                     </div>
                     
                     <div id="subjectblock" class="field">
-                      <label class="label">Sujet</label>
+                      <label class="label" style="color: white;">Sujet</label>
                       <div class="control">
                         <div class="select">
                           <select id="subject">
@@ -250,7 +272,7 @@
                     </div>
                     
                     <div id="messageblock" class="field">
-                      <label class="label">Message</label>
+                      <label class="label" style="color: white;">Message</label>
                       <div class="control">
                         <textarea id="message" class="textarea" placeholder="Votre message"></textarea>
                       </div>
