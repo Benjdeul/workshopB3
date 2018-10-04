@@ -9,7 +9,7 @@
         <div class="media">
           <div class="media-left">
             <figure class="image is-48x48">
-              <a href="<?= $school[$i]['site']?>"><img src="<?= $school[$i]['logo']?>" alt="Placeholder image"></a>
+              <a href="<?= $school[$i]['site']?>" target="_blank"><img src="<?= $school[$i]['logo']?>" alt="Placeholder image"></a>
             </figure>
           </div>
           <div class="media-content">

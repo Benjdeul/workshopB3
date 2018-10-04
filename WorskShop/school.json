@@ -5,56 +5,72 @@
 			"batiment": "Berthet",
 			"etage": "2",
 			"pos": "B0",
-			"info": "Les formations de SUP’DE COM sont pensées chaque année pour coller au plus près des évolutions du marché et des attentes des entreprises" 
+			"info": "Les formations de SUP’DE COM sont pensées chaque année pour coller au plus près des évolutions du marché et des attentes des entreprises",
+			"logo": "img/supdecom.png",
+			"site": "http://www.ecoles-supdecom.com/"
 		},
 		{
 			"name": "CFA",
 			"batiment": "Berthet",
 			"etage": "1",
 			"pos": "B0",
-			"info": "Le CFA Lyon est un centre de formation en apprentissage qui propose des Bacs Professionnels, des BTS, des Titres inscrits au RNCP dans les domaines du commerce, de la communication, l’informatique, la comptabilité et gestion des organisations." 
+			"info": "Le CFA Lyon est un centre de formation en apprentissage qui propose des Bacs Professionnels, des BTS, des Titres inscrits au RNCP dans les domaines du commerce, de la communication, l’informatique, la comptabilité et gestion des organisations.",
+			"logo": "img/cfa.png",
+			"site": "http://www.cfa-igslyon.com/"
 		},
 		{
 			"name": "CIEFA",
 			"batiment": "Berthet",
 			"etage": "1",
 			"pos": "B0",
-			"info": "Le CIEFA Lyon est un centre de formation en alternance qui offre des formations en gestion d’entreprise : commerce, communication, management, comptabilité et RH." 
+			"info": "Le CIEFA Lyon est un centre de formation en alternance qui offre des formations en gestion d’entreprise : commerce, communication, management, comptabilité et RH.",
+			"logo": "img/ciefa.png",
+			"site": "http://www.ciefalyon.com/"
 		},
 		{
 			"name": "EPSI",
 			"batiment": "Leclair",
 			"etage": "2",
 			"pos": "L0",
-			"info": "L’EPSI est une école informatique multi campus, présente Lyon. L’EPSI se positionne sur le segment des Ecoles d’ingénierie informatique post bac et sans prépa. Exigence, accompagnement dans l’effort, humanité et convivialité sont les forces de l’école informatique EPSI." 
+			"info": "L’EPSI est une école informatique multi campus, présente Lyon. L’EPSI se positionne sur le segment des Ecoles d’ingénierie informatique post bac et sans prépa. Exigence, accompagnement dans l’effort, humanité et convivialité sont les forces de l’école informatique EPSI.",
+			"logo": "img/epsi.png",
+			"site": "http://www.epsi.fr/"
 		},
 		{
 			"name": "WIS",
 			"batiment": "Leclair",
 			"etage": "2",
 			"pos": "L0",
-			"info": "WIS (Web International School) est une école qui propose une formation web et digital business accessible après le Bac ou en admission parallèle. WIS délivre 2 formations : le programme Bachelor ' web et digital business ' (Bac+3) et le programme Expertise Digital Business (Bac+5)." 
+			"info": "WIS (Web International School) est une école qui propose une formation web et digital business accessible après le Bac ou en admission parallèle. WIS délivre 2 formations : le programme Bachelor ' web et digital business ' (Bac+3) et le programme Expertise Digital Business (Bac+5).",
+			"logo": "img/wis.png",
+			"site": "http://www.wis-ecoles.com/"
 		},
 		{
 			"name": "ISCPA",
 			"batiment": "Berthet",
 			"etage": "3",
 			"pos": "B0",
-			"info": "L’ISCPA, Institut supérieur des Médias, est spécialisée dans les formations aux métiers du Journalisme, de la Communication et de la Production, de BAC à BAC+5, à Paris, Lyon et Toulouse." 
+			"info": "L’ISCPA, Institut supérieur des Médias, est spécialisée dans les formations aux métiers du Journalisme, de la Communication et de la Production, de BAC à BAC+5, à Paris, Lyon et Toulouse.",
+			"logo": "img/iscpa.png",
+			"site": "http://www.iscpa-ecoles.com/"
 		},
 		{
 			"name": "IDRAC Business School",
 			"batiment": "Berthet",
 			"etage": "2",
 			"pos": "B0",
-			"info": "IDRAC Business school est une Ecole de commerce post bac et sans prépa. Exigence, accompagnement dans l’effort, humanité et convivialité sont les forces de l’école. Découvrez nos programmes Bachelor, BTS, Grande Ecole et Bac+4/5qui sont aussi accessibles par la VAE." 
+			"info": "IDRAC Business school est une Ecole de commerce post bac et sans prépa. Exigence, accompagnement dans l’effort, humanité et convivialité sont les forces de l’école. Découvrez nos programmes Bachelor, BTS, Grande Ecole et Bac+4/5qui sont aussi accessibles par la VAE.",
+			"logo": "img/idracB.png",
+			"site": "http://www.ecoles-idrac.com/" 
 		},
 		{
 			"name": "IDRAC Executive Education",
 			"batiment": "Lelcair",
 			"etage": "4",
 			"pos": "L0",
-			"info": "La formation continue du groupe Idrac Business School répond aux besoins en formation des actifs : salariés, demandeurs d’emploi… Sur les thématiques du management, marketing, vente, e-commerce, achats, relation client, communication, gestion, finance…" 
+			"info": "La formation continue du groupe Idrac Business School répond aux besoins en formation des actifs : salariés, demandeurs d’emploi… Sur les thématiques du management, marketing, vente, e-commerce, achats, relation client, communication, gestion, finance…",
+			"logo": "img/idracE.png",
+			"site": "http://www.fc-idrac.fr/idrac-formation-continue/formation-continue/"
 		},
 		{
 			"name": "CEFAM",
